@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculator</title>
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
     <h1 style="text-align:center">Calculator App</h1>
@@ -65,6 +66,38 @@
 </div> 
 
 </div>
+
+<script>
+    // displaying of the digits
+function display(val){
+
+document.getElementById('result').value += val
+
+return val
+
+}
+// functioning
+function solve(){
+
+let x = document.getElementById('result').value
+
+let y = eval(x);
+
+document.getElementById('result').value = y
+
+return y
+
+}
+
+// clearing of the screen
+
+function clearScreen(){
+
+document.getElementById('result').value = ''
+
+}
+</script>
+
 </body>
 </html>
 
